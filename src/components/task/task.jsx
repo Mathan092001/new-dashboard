@@ -24,7 +24,7 @@ function Task({ percentage }) {
   const center = radius + strokeWidth;
   const circumference = Math.PI * radius;
 
-  // Map percentage to arc length
+
   const arcLength = (percentage / 100) * circumference;
 
   const [bar, setBar] = useState("Important")
@@ -181,7 +181,7 @@ function Task({ percentage }) {
         height={radius + strokeWidth * 2}
         viewBox={`0 0 ${2 * (radius + strokeWidth)} ${radius + strokeWidth * 2}`}
       >
-        {/* Background semi-circle (track) */}
+        
         <path
           d={`
             M ${strokeWidth},${center}
@@ -193,7 +193,7 @@ function Task({ percentage }) {
           strokeLinecap="round"
         />
 
-        {/* Multi-colored progress segments */}
+        
         <path
           d={`
             M ${strokeWidth},${center}
@@ -206,7 +206,7 @@ function Task({ percentage }) {
           strokeLinecap="round"
         />
 
-        {/* Gradient definition */}
+        
         <defs>
           <linearGradient id="gradientStroke">
             <stop offset="0%" stopColor="#2E6F40" />   {/* Green */}
@@ -216,7 +216,7 @@ function Task({ percentage }) {
         </defs>
       </svg>
 
-      {/* Percentage & text */}
+      
       <div className="-mt-20 text-center">
         <p className="text-gray-300 text-3xl font-bold">72%</p>
         <p className="text-gray-400 text-sm">Completed</p>
