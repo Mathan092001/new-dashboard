@@ -140,9 +140,9 @@ function Task({ percentage }) {
                   <img className='md:w-[1.3vw] md:h-[2.5vh] w-[5vw] h-[2vh] border rounded-full -ml-3' src={image3} alt="profile" />
                 </div>
                 <div className='flex gap-1'>
-                  <img className='md:w-[1.3vw] md:h-[2vh] w-[5vw] h-[2vh] border rounded-full' src={image4} alt="profile" />
-                  <img className='md:w-[1.3vw] h-[2vh] border rounded-full -ml-3' src={image5} alt="profile" />
-                  <img className='md:w-[1.3vw] h-[2vh] border rounded-full -ml-3' src={image1} alt="profile" />
+                  <img className='md:w-[1.3vw] md:h-[2.5vh] w-[5vw] h-[2vh] border rounded-full' src={image4} alt="profile" />
+                  <img className='md:w-[1.3vw] md:h-[2.5vh] h-[2vh] border rounded-full -ml-3' src={image5} alt="profile" />
+                  <img className='md:w-[1.3vw] md:h-[2.5vh] h-[2vh] border rounded-full -ml-3' src={image1} alt="profile" />
                 </div>
                 <img className='md:w-[1.3vw] md:h-[2.5vh] w-[5vw] h-[2vh] border rounded-full' src={image2} alt="profile" />
                 <img className='md:w-[1.3vw] md:h-[2.5vh] w-[5vw] h-[2vh] border rounded-full' src={image4} alt="profile" />
