@@ -245,68 +245,68 @@ function Task({ percentage }) {
         <div className='md:flex gap-3 '>
         <div className='flex md:mb-0 mb-3 flex-col md:w-[40vw] w-[70vw] p-4 gap-2 bg-slate-900 rounded-[0.8vw] font-semibold '>
           <h1>Today task</h1>
-          <div className='flex md:gap-12 gap-1 md:px-3 md:text-[0.7vw] text-[3vw]'>
-            <div className='flex gap-2 items-center'>
+          <div className='flex md:gap-12 gap-1 md:px-3 md:text-[0.7vw] text-[2.8vw]'>
+            <div className='flex md:gap-2 items-center'>
               <div className='flex flex-col items-center'>
                 <h2 onClick={() => setBar("All")} className='cursor-pointer'>All</h2>
-                {bar === "All" && <hr className='w-[2.5vw] border-[0.1vw] border-blue-600 absolute mt-7 ' />}
+                {bar === "All" && <hr className='md:w-[2vw] w-[12vw] border-[0.1vw] border-blue-600 absolute md:mt-7 mt-[6vw]' />}
               </div>
               <p className='text-blue-600 md:text-[0.7vw] bg-gray-800 px-1 rounded-full'>12</p>
             </div>
             <div className='flex flex-col items-center'>
                 <h2 onClick={() => setBar("Important")} className='cursor-pointer'>Important</h2>
-                {bar === "Important" && <hr className='w-[5vw] border-[0.1vw] border-blue-600 absolute mt-7' />}
+                {bar === "Important" && <hr className='md:w-[5vw] w-[12vw] border-[0.1vw] border-blue-600 absolute md:mt-7 mt-[6vw]' />}
             </div>
             <div className='flex gap-2 items-center'>
               <div className='flex flex-col items-center'>
                   <h2 onClick={() => setBar("Notes")} className='cursor-pointer'>Notes</h2>
-                  {bar === "Notes" && <hr className='w-[5vw] border-[0.1vw] border-blue-600 absolute mt-7' />}
+                  {bar === "Notes" && <hr className='md:w-[5vw] w-[12vw] border-[0.1vw] border-blue-600 absolute md:mt-7 mt-[6vw]' />}
               </div>
               <p className='text-blue-600 md:text-[0.7vw] bg-gray-800 px-2 rounded-full'>8</p>
             </div>
             <div className='flex gap-2 items-center'>
               <div className='flex flex-col items-center'>
                 <h2 onClick={() => setBar("Linkes")} className='cursor-pointer'>Links</h2>
-                {bar === "Linkes" && <hr className='w-[5vw] border-[0.1vw] border-blue-600 absolute mt-7' />}
+                {bar === "Linkes" && <hr className='md:w-[5vw] w-[12vw] border-[0.1vw] border-blue-600 absolute md:mt-7 mt-[6vw]' />}
               </div>
               <p className='text-blue-600 md:text-[0.7vw] bg-gray-800 px-1 rounded-full'>10</p>
             </div>
           </div>
           <hr className='w-full border-[0.1vw] border-gray-700' />
-          <div className='flex justify-between pr-5 '>
+          <div className='flex justify-between md:pr-5 '>
             <div className='flex gap-2 items-center'>
               <i className='bg-custom-purple px-1 py-1 rounded-[100%] md:text-[0.6vw] text-[1vw] text-gray-400'><TiTick/></i>
               <p className='md:text-[0.7vw] text-[2vw]'>Create a user flow of social application design</p>
             </div>
-            <p className='md:text-[0.7vw] text-[2vw] bg-green-950 flex justify-center md:w-[5vw] w-[12vw] py-1 rounded-[0.2rem] text-green-600'>Approved</p>
+            <p className='md:text-[0.7vw] text-[1.5vw] bg-green-950 flex justify-center md:w-[5vw] items-center w-[12vw] py-1 rounded-[0.2rem] text-green-600'>Approved</p>
           </div>
-          <div className='flex justify-between pr-5 '>
+          <div className='flex justify-between md:pr-5 '>
             <div className='flex gap-2 items-center'>
               <i className='bg-custom-purple px-1 py-1 rounded-[100%] md:text-[0.6vw] text-[1vw] text-gray-400'><TiTick/></i>
               <p className='md:text-[0.7vw] text-[2vw]'>Create a user flow of social application design</p>
             </div>
-            <p className='md:text-[0.7vw] text-[2vw] bg-pink-300 opacity-70 flex justify-center md:w-[5vw] w-[12vw] py-1 rounded-[0.2rem] text-pink-800'>In review</p>
+            <p className='md:text-[0.7vw] text-[1.5vw] bg-pink-300 opacity-70 flex justify-center items-center md:w-[5vw] w-[12vw] py-1 rounded-[0.2rem] text-pink-800'>In review</p>
           </div>
-          <div className='flex justify-between pr-5 '>
+          <div className='flex justify-between md:pr-5 '>
             <div className='flex gap-2 items-center'>
               <i className='bg-custom-purple px-1 py-1 rounded-[100%] md:text-[0.6vw] text-[1vw] text-gray-400'><TiTick/></i>
               <p className='md:text-[0.7vw] text-[2vw]'>Landing page design for Fintech project of singapore</p>
             </div>
-            <p className='md:text-[0.7vw] text-[2vw] bg-pink-300 opacity-70 flex justify-center md:w-[5vw] w-[12vw] py-1 rounded-[0.2rem] text-pink-800'>In review</p>
+            <p className='md:text-[0.7vw] text-[1.5vw] bg-pink-300 opacity-70 flex justify-center items-center md:w-[5vw] w-[12vw] py-1 rounded-[0.2rem] text-pink-800'>In review</p>
           </div>
-          <div className='flex justify-between pr-5 '>
+          <div className='flex justify-between md:pr-5 '>
             <div className='flex gap-2 items-center'>
               <i className='border border-gray-400 md:px-2 md:py-2 px-1 py-1 rounded-[100%]'></i>
               <p className='md:text-[0.7vw] text-[2vw]'>Interactive prototype for app screens of deltamine project</p>
             </div>
-            <p className='md:text-[0.7vw] text-[2vw] bg-slate-600 opacity-70 flex justify-center md:w-[5vw] w-[12vw] py-1 rounded-[0.2rem] text-gray-200'>On going</p>
+            <p className='md:text-[0.7vw] text-[1.5vw] bg-slate-600 opacity-70 flex justify-center items-center md:w-[5vw] w-[10vw] py-1 rounded-[0.2rem] text-gray-200'>On going</p>
           </div>
-          <div className='flex justify-between pr-5 '>
+          <div className='flex justify-between md:pr-5 '>
             <div className='flex gap-2 items-center'>
               <i className='bg-custom-purple px-1 py-1 rounded-[100%] md:text-[0.6vw] text-[1vw] text-gray-400'><TiTick/></i>
               <p className='md:text-[0.7vw] text-[2vw]'>Create a user flow of social application design</p>
             </div>
-            <p className='md:text-[0.7vw] text-[2vw] bg-green-950 flex justify-center md:w-[5vw] w-[12vw] py-1 rounded-[0.2rem] text-green-600'>Approved</p>
+            <p className='md:text-[0.7vw] text-[1.5vw] bg-green-950 flex justify-center items-center md:w-[5vw] w-[12vw] py-1 rounded-[0.2rem] text-green-600'>Approved</p>
           </div>
         </div>
         <div className='bg-slate-900 font-semibold md:w-[19vw] rounded-[0.8vw] p-4 flex flex-col gap-5'>
