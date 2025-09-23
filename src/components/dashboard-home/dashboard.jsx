@@ -26,14 +26,14 @@ function Dashboard() {
   return (
     <section className='md:w-[100vw] md:h-[100vh] flex justify-center items-center bg-black text-gray-300'>
         <div className='bg-slate-800 p-3 w-auto rounded-[0.8vw]'>
-            <div className='flex bg-gray-950 rounded-[0.8vw] z-0'>
-                <div className={`${navOpen ? "md:w-[12vw] w-[20vw] duration-300" : "md:w-[5vw] w-[20vw] duration-300"} z-[9999] bg-slate-900 relative  h-auto flex justify-evenly rounded-[0.8vw] px-3 py-5`} >
+            <div className='flex bg-gray-950 rounded-[0.8vw]'>
+                <div className={`${navOpen ? "md:w-[12vw] w-[20vw] duration-300" : "md:w-[5vw] w-[15vw] duration-300"} z-[9999] bg-slate-900 relative h-auto flex md:justify-evenly rounded-[0.8vw] px-3 py-5`} >
                     <div className='flex flex-col justify-between'>
                     <div className='flex flex-col gap-10'>
                     <div className='flex flex-col justify-center items-center gap-10'>
                     <div className={`${navOpen ? "w-[10.5vw] duration-300" : "md:w-[3vw] duration-300"} overflow-hidden whitespace-nowrap transition-all duration-300 flex gap-2 items-center`}>
                        <i className='text-blue-600 md:text-[2.5vw] text-[8vw]'><IoLogoBitbucket/></i>
-                       {navOpen && <h1 className='font-bold md:text-[1.2vw]'>Manage Pro</h1>}
+                       {navOpen && <h1 className='font-bold md:text-[1.2vw] '>Manage Pro</h1>}
                     </div>
                     <div className={`${navOpen ? "w-[10.5vw] duration-300" : "md:w-[3vw] duration-300"} transition-all duration-300 bg-gray-700 cursor-pointer p-2 rounded-full flex gap-2 items-center overflow-hidden`}>
                        <i className='text-gray-300 bg-blue-700 rounded-full md:p-2 p-1 text-[3vw] md:text-[1.3vw]'><FaPlus/></i>
@@ -41,31 +41,31 @@ function Dashboard() {
                     </div>
                     </div>
                     <div className='flex flex-col gap-2'>
-                    <div  onClick={() => setActive("dashboard")} className={ `${navOpen ? "w-[10.5vw] duration-300 " : "md:w-[3vw] duration-300"} ${active === "dashboard" && "overflow-hidden whitespace-nowrap bg-slate-950  md:text-[0.9vw] cursor-pointer font-semibold text-blue-600 md:px-4 md:py-3 px-3 py-2 rounded-lg flex justify-start gap-2 items-center"} overflow-hidden whitespace-nowrap hover:bg-slate-950 hover:text-blue-600 md:text-[0.9vw] cursor-pointer font-semibold md:px-4 md:py-3 rounded-lg flex justify-start gap-2 items-center`}>
+                    <div  onClick={() => setActive("dashboard")} className={ `${navOpen ? "w-[10.5vw] duration-300 " : "md:w-[3vw] duration-300"} ${active === "dashboard" && "overflow-hidden whitespace-nowrap bg-slate-950  md:text-[0.9vw] cursor-pointer font-semibold text-blue-600 md:px-4 md:py-3 px-3 py-2 rounded-lg flex justify-start gap-2 items-center"} overflow-hidden whitespace-nowrap hover:bg-slate-950 hover:text-blue-600 md:text-[0.9vw] text-[5vw] cursor-pointer font-semibold md:px-4 md:py-3 rounded-lg flex justify-start gap-2 items-center`}>
                        <i className='md:text-[1.3vw]'><RxDashboard/></i>
-                       {navOpen && <h2 className='transition-transform duration-300 hover:translate-x-2 '>Dashboard</h2>}
+                       {navOpen && <h2 className='transition-transform md:duration-300 hover:translate-x-2 '>Dashboard</h2>}
                     </div>
-                    <div  onClick={() => setActive("task")} className={ `${navOpen ? "w-[10.5vw] duration-300" : "md:w-[3vw] duration-300"} ${active === "task" && "overflow-hidden whitespace-nowrap bg-slate-950  md:text-[0.9vw] cursor-pointer font-semibold text-blue-600 md:px-4 md:py-3 px-3 py-2 rounded-lg flex justify-start gap-2 items-center"} overflow-hidden whitespace-nowrap hover:bg-slate-950 hover:text-blue-600  md:text-[0.9vw] cursor-pointer font-semibold md:px-4 md:py-3 rounded-lg flex justify-start gap-2 items-center`}>
+                    <div  onClick={() => setActive("task")} className={ `${navOpen ? "w-[10.5vw]  duration-300" : "md:w-[5vw] duration-300"} ${active === "task" && "overflow-hidden whitespace-nowrap bg-slate-950  md:text-[0.9vw] cursor-pointer font-semibold text-blue-600 md:px-4 md:py-3 px-3 py-2 rounded-lg flex justify-start gap-2 items-center"} overflow-hidden whitespace-nowrap hover:bg-slate-950 hover:text-blue-600  md:text-[0.9vw] text-[5vw] cursor-pointer font-semibold md:px-4 md:py-3 rounded-lg flex justify-start gap-2 items-center`}>
                        <i className='md:text-[1.3vw]'><GrTask/></i>
                        {navOpen && <h2 className='transition-transform duration-300 hover:translate-x-2'>Tasks</h2>}
                     </div>
-                    <div onClick={() => setActive("timelog")} className={ `${navOpen ? "w-[10.5vw] duration-300" : "md:w-[3vw] duration-300"} ${active === "timelog" && "overflow-hidden whitespace-nowrap bg-slate-950  md:text-[0.9vw] cursor-pointer font-semibold text-blue-600 md:px-4 md:py-3 px-3 py-2 rounded-lg flex justify-start gap-2 items-center"} overflow-hidden whitespace-nowrap hover:bg-slate-950 hover:text-blue-600  md:text-[0.9vw] cursor-pointer font-semibold md:px-4 md:py-3 rounded-lg flex justify-start gap-2 items-center`}>
+                    <div onClick={() => setActive("timelog")} className={ `${navOpen ? "w-[10.5vw] duration-300" : "md:w-[3vw] duration-300"} ${active === "timelog" && "overflow-hidden whitespace-nowrap bg-slate-950  md:text-[0.9vw] cursor-pointer font-semibold text-blue-600 md:px-4 md:py-3 px-3 py-2 rounded-lg flex justify-start gap-2 items-center"} overflow-hidden whitespace-nowrap hover:bg-slate-950 hover:text-blue-600  md:text-[0.9vw] text-[5vw] cursor-pointer font-semibold md:px-4 md:py-3 rounded-lg flex justify-start gap-2 items-center`}>
                        <i className='md:text-[1.3vw]'><MdOutlineAccessTime/></i>
                        {navOpen && <h2  className='transition-transform duration-300 hover:translate-x-2'>Time Log</h2>}
                     </div>
-                    <div  onClick={() => setActive("resource")} className={ `${navOpen ? "w-[10.5vw] duration-300" : "md:w-[3vw] duration-300"} ${active === "resource" && "overflow-hidden whitespace-nowrap bg-slate-950  md:text-[0.9vw] cursor-pointer font-semibold text-blue-600 md:px-4 md:py-3 px-3 py-2 rounded-lg flex justify-start gap-2 items-center"} overflow-hidden whitespace-nowrap hover:bg-slate-950 hover:text-blue-600  md:text-[0.9vw] cursor-pointer font-semibold md:px-4 md:py-3 rounded-lg flex justify-start gap-2 items-center`}>
+                    <div  onClick={() => setActive("resource")} className={ `${navOpen ? "w-[10.5vw] duration-300" : "md:w-[3vw] duration-300"} ${active === "resource" && "overflow-hidden whitespace-nowrap bg-slate-950  md:text-[0.9vw] cursor-pointer font-semibold text-blue-600 md:px-4 md:py-3 px-3 py-2 rounded-lg flex justify-start gap-2 items-center"} overflow-hidden whitespace-nowrap hover:bg-slate-950 hover:text-blue-600  md:text-[0.9vw] text-[5vw] cursor-pointer font-semibold md:px-4 md:py-3 rounded-lg flex justify-start gap-2 items-center`}>
                        <i className='md:text-[1.3vw]'><RiOrganizationChart/></i>
                        {navOpen && <h2 className='transition-transform duration-300 hover:translate-x-2'>Resource mgnt</h2>}
                     </div>
-                    <div  onClick={() => setActive("users")} className={ `${navOpen ? "w-[10.5vw] duration-300" : "md:w-[3vw] duration-300"} ${active === "users" && "overflow-hidden whitespace-nowrap bg-slate-950  md:text-[0.9vw] cursor-pointer font-semibold text-blue-600 md:px-4 md:py-3 px-3 py-2 rounded-lg flex justify-start gap-2 items-center"} overflow-hidden whitespace-nowrap hover:bg-slate-950 hover:text-blue-600  md:text-[0.9vw] cursor-pointer font-semibold md:px-4 md:py-3 rounded-lg flex justify-start gap-2 items-center`}>
+                    <div  onClick={() => setActive("users")} className={ `${navOpen ? "w-[10.5vw] duration-300" : "md:w-[3vw] duration-300"} ${active === "users" && "overflow-hidden whitespace-nowrap bg-slate-950  md:text-[0.9vw] cursor-pointer font-semibold text-blue-600 md:px-4 md:py-3 px-3 py-2 rounded-lg flex justify-start gap-2 items-center"} overflow-hidden whitespace-nowrap hover:bg-slate-950 hover:text-blue-600  md:text-[0.9vw] text-[5vw] cursor-pointer font-semibold md:px-4 md:py-3 rounded-lg flex justify-start gap-2 items-center`}>
                        <i className='md:text-[1.3vw]'><FaUsers/></i>
                        {navOpen && <h2 className='transition-transform duration-300 hover:translate-x-2'>Users</h2>}
                     </div>
-                    <div  onClick={() => setActive("project")} className={ `${navOpen ? "w-[10.5vw] duration-300" : "md:w-[3vw] duration-300"} ${active === "project" && "overflow-hidden whitespace-nowrap bg-slate-950  md:text-[0.9vw] cursor-pointer font-semibold text-blue-600 md:px-4 md:py-3 px-3 py-2 rounded-lg flex justify-start gap-2 items-center"} overflow-hidden whitespace-nowrap hover:bg-slate-950 hover:text-blue-600  md:text-[0.9vw] cursor-pointer font-semibold md:px-4 md:py-3 rounded-lg flex justify-start gap-2 items-center`}>
+                    <div  onClick={() => setActive("project")} className={ `${navOpen ? "w-[10.5vw] duration-300" : "md:w-[3vw] duration-300"} ${active === "project" && "overflow-hidden whitespace-nowrap bg-slate-950  md:text-[0.9vw] cursor-pointer font-semibold text-blue-600 md:px-4 md:py-3 px-3 py-2 rounded-lg flex justify-start gap-2 items-center"} overflow-hidden whitespace-nowrap hover:bg-slate-950 hover:text-blue-600  md:text-[0.9vw] text-[5vw] cursor-pointer font-semibold md:px-4 md:py-3 rounded-lg flex justify-start gap-2 items-center`}>
                        <i className='md:text-[1.3vw]'><HiOutlineSquare3Stack3D/></i>
                        {navOpen && <h2 className='transition-transform duration-300 hover:translate-x-2'>Project template</h2>}
                     </div>
-                    <div onClick={() => setActive("preference")} className={ `${navOpen ? "w-[10.5vw] duration-300" : "md:w-[3vw] duration-300"} ${active === "preference" && "overflow-hidden whitespace-nowrap bg-slate-950  md:text-[0.9vw] cursor-pointer font-semibold text-blue-600 md:px-4 md:py-3 px-3 py-2 rounded-lg flex justify-start gap-2 items-center"} overflow-hidden whitespace-nowrap hover:bg-slate-950 hover:text-blue-600  md:text-[0.9vw] cursor-pointer font-semibold md:px-4 md:py-3 rounded-lg flex justify-start gap-2 items-center`}>
+                    <div onClick={() => setActive("preference")} className={ `${navOpen ? "w-[10.5vw] duration-300" : "md:w-[3vw] duration-300"} ${active === "preference" && "overflow-hidden whitespace-nowrap bg-slate-950  md:text-[0.9vw] cursor-pointer font-semibold text-blue-600 md:px-4 md:py-3 px-3 py-2 rounded-lg flex justify-start gap-2 items-center"} overflow-hidden whitespace-nowrap hover:bg-slate-950 hover:text-blue-600  md:text-[0.9vw] text-[5vw] cursor-pointer font-semibold md:px-4 md:py-3 rounded-lg flex justify-start gap-2 items-center`}>
                        <i className='md:text-[1.3vw]'><IoSettingsOutline/></i>
                        {navOpen && <h2 className='transition-transform duration-300 hover:translate-x-2'>Preference</h2>}
                     </div>
