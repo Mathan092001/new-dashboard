@@ -31,7 +31,7 @@ function Task({ percentage }) {
   localStorage.setItem("bar", bar)
 
   return (
-    <div className='flex flex-col gap-3 p-4 md:h-[96vh] '>
+    <div className='flex flex-col gap-3  '>
         <div className='md:flex gap-3'>
           <div className='flex justify-between items-center md:w-[45vw]'>
             <h1 className='md:text-[1.2vw] text-[4vw] font-semibold'>Dashboard</h1>
